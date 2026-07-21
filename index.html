@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parate Prem — Cloud &amp; Full-Stack Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- vertical circuit trace that fills on scroll -->
+<div class="trace-track" aria-hidden="true">
+  <div class="trace-fill" id="traceFill"></div>
+</div>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+<div class="ambient-glow ambient-1" aria-hidden="true"></div>
+<div class="ambient-glow ambient-2" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="topbar">
+  <div class="topbar-mark">
+    <span class="mark-index">SHEET 01</span>
+    <span class="mark-name">P.PREM</span>
+    <span class="status-pulse-dot" title="Active & Available"></span>
+    <span class="status-text">Available</span>
+  </div>
+  <div class="topbar-time" id="liveClock">GUJARAT, IN — Loading...</div>
+  <nav class="topnav">
+    <a href="#about">01 Profile</a>
+    <a href="#stack">02 Stack</a>
+    <a href="#education">03 Education</a>
+    <a href="#project">04 Build</a>
+    <a href="#contact">05 Contact</a>
+    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme" style="margin-left: 12px;">
+      <span class="theme-icon-sun">☼</span>
+      <span class="theme-icon-moon">☾</span>
+    </button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow animate-fade-in">// cloud engineer &amp; full-stack developer</p>
+    <h1 class="hero-title">
+      <span class="line animate-slide-up" style="--delay: 1;">PARATE</span>
+      <span class="line accent-outline animate-slide-up" style="--delay: 2;">PREM</span>
+    </h1>
+    <p class="hero-sub animate-fade-in" style="--delay: 3;">
+      Designing and shipping infrastructure &amp; interfaces — from
+      <span class="tag-inline">AWS</span> and <span class="tag-inline">Azure</span> nodes
+      to <span class="tag-inline">React</span> front ends and
+      <span class="tag-inline">Django / PHP</span> backends.
+    </p>
+    <div class="hero-cta animate-fade-in" style="--delay: 4;">
+      <a href="mailto:parateprem3706@gmail.com" class="btn btn-solid">Email me</a>
+      <a href="tel:+919558798089" class="btn btn-ghost">+91 95587 98089</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+    </div>
+  </div>
+
+  <!-- Scroll Down Mouse Indicator -->
+  <div class="scroll-indicator animate-fade-in" style="--delay: 5;">
+    <span class="scroll-mouse">
+      <span class="scroll-wheel"></span>
+    </span>
+    <span class="scroll-label">Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sheet" id="about">
+  <div class="sheet-head">
+    <div class="sh-left">
+      <span class="sheet-num">01</span>
+      <h2>Profile Summary</h2>
+    </div>
+    <span class="sheet-meta">SYS.LOC // 23.02° N, 72.57° E</span>
+  </div>
+  <div class="sheet-body reveal reveal-slide-left">
+    <p class="lede">
+      Aspiring cloud engineer and BSc IT student with hands-on experience across
+      AWS and Microsoft Azure, and a full-stack developer's instinct for turning
+      infrastructure into usable products.
+    </p>
+    <p>
+      Proficient in full-stack web development using React.js, Tailwind CSS, Django, PHP
+      and Bootstrap, with practical knowledge of MongoDB and SQL databases. Dedicated to
+      leveraging cloud technologies and modern web frameworks to deliver efficient,
+      scalable solutions — and to keep learning the layer beneath the one I already know.
+    </p>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="sheet sheet-alt" id="stack">
+  <div class="sheet-head">
+    <div class="sh-left">
+      <span class="sheet-num">02</span>
+      <h2>Stack &amp; Components</h2>
+    </div>
+    <span class="sheet-meta">CORE.TEC // V.08_BUILD</span>
+  </div>
+
+  <div class="stack-grid">
+    <div class="stack-col reveal reveal-slide-up">
+      <h3 class="stack-label">Cloud Platforms</h3>
+      <ul class="chip-list">
+        <li class="reveal-item" style="--item-index: 1;">AWS · S3</li>
+        <li class="reveal-item" style="--item-index: 2;">AWS · EC2</li>
+        <li class="reveal-item" style="--item-index: 3;">Azure · Virtual Machines</li>
+        <li class="reveal-item" style="--item-index: 4;">Azure · VMSS</li>
+        <li class="reveal-item" style="--item-index: 5;">Azure · Blob Storage</li>
+        <li class="reveal-item" style="--item-index: 6;">Azure · VNet</li>
+      </ul>
+    </div>
+
+    <div class="stack-col reveal reveal-slide-up">
+      <h3 class="stack-label">Languages &amp; Frameworks</h3>
+      <ul class="chip-list">
+        <li class="reveal-item" style="--item-index: 1;">PHP</li>
+        <li class="reveal-item" style="--item-index: 2;">Python</li>
+        <li class="reveal-item" style="--item-index: 3;">JavaScript</li>
+        <li class="reveal-item" style="--item-index: 4;">React.js</li>
+        <li class="reveal-item" style="--item-index: 5;">Django</li>
+        <li class="reveal-item" style="--item-index: 6;">Tailwind CSS</li>
+        <li class="reveal-item" style="--item-index: 7;">Bootstrap</li>
+      </ul>
+    </div>
+
+    <div class="stack-col reveal reveal-slide-up">
+      <h3 class="stack-label">Data &amp; Tools</h3>
+      <ul class="chip-list">
+        <li class="reveal-item" style="--item-index: 1;">MongoDB</li>
+        <li class="reveal-item" style="--item-index: 2;">SQL</li>
+        <li class="reveal-item" style="--item-index: 3;">Git</li>
+        <li class="reveal-item" style="--item-index: 4;">VS Code</li>
+        <li class="reveal-item" style="--item-index: 5;">Linux (basic commands)</li>
+      </ul>
+    </div>
+
+    <div class="stack-col reveal reveal-slide-up">
+      <h3 class="stack-label">Working Style</h3>
+      <ul class="chip-list chip-list-soft">
+        <li class="reveal-item" style="--item-index: 1;">Communication</li>
+        <li class="reveal-item" style="--item-index: 2;">Team Collaboration</li>
+        <li class="reveal-item" style="--item-index: 3;">Problem Solving</li>
+        <li class="reveal-item" style="--item-index: 4;">Adaptability</li>
+        <li class="reveal-item" style="--item-index: 5;">Time Management</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION + LANGUAGES -->
+<section class="sheet" id="education">
+  <div class="sheet-head">
+    <div class="sh-left">
+      <span class="sheet-num">03</span>
+      <h2>Education &amp; Languages</h2>
+    </div>
+    <span class="sheet-meta">ACAD.DB // SHEET_01</span>
+  </div>
+
+  <div class="two-col">
+    <div class="reveal reveal-slide-left">
+      <h3 class="stack-label">Education</h3>
+      <div class="edu-row">
+        <span class="edu-date">2023 — 2025</span>
+        <div>
+          <p class="edu-title">IMSc IT — Cloud &amp; Application Development</p>
+          <p class="edu-sub">3rd year student · Gujarat University, CPC Department</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-slide-right">
+      <h3 class="stack-label">Languages</h3>
+      <ul class="chip-list">
+        <li class="reveal-item" style="--item-index: 1;">English</li>
+        <li class="reveal-item" style="--item-index: 2;">Hindi</li>
+        <li class="reveal-item" style="--item-index: 3;">Gujarati</li>
+        <li class="reveal-item" style="--item-index: 4;">Marathi</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="sheet sheet-alt" id="project">
+  <div class="sheet-head">
+    <div class="sh-left">
+      <span class="sheet-num">04</span>
+      <h2>Featured Build</h2>
+    </div>
+    <span class="sheet-meta">REPO.ID // IMPORTO_B2B</span>
+  </div>
+
+  <div class="project-card reveal reveal-scale-in">
+    <div class="project-tag">B2B Import–Export Logistics Platform</div>
+    <h3 class="project-title">IMPORTO — Transport Management System</h3>
+    <p class="project-desc">
+      A full-stack web application built to streamline import-export logistics —
+      React.js on the frontend, PHP with MySQL on the backend. Covers bill creation,
+      Lorry Receipt (LR) generation, multi-branch management, and user authentication,
+      with responsive Tailwind CSS components and built-in PDF export for document handling.
+    </p>
+    <ul class="project-features">
+      <li class="reveal-item" style="--item-index: 1;">Bill creation &amp; multi-branch management</li>
+      <li class="reveal-item" style="--item-index: 2;">Lorry Receipt (LR) generation</li>
+      <li class="reveal-item" style="--item-index: 3;">User authentication</li>
+      <li class="reveal-item" style="--item-index: 4;">PDF export for document handling</li>
+    </ul>
+    <div class="project-stack">
+      <span class="reveal-item" style="--item-index: 5;">React.js</span>
+      <span class="reveal-item" style="--item-index: 6;">PHP</span>
+      <span class="reveal-item" style="--item-index: 7;">MySQL</span>
+      <span class="reveal-item" style="--item-index: 8;">Tailwind CSS</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / TITLE BLOCK -->
+<footer class="titleblock" id="contact">
+  <div class="tb-left">
+    <p class="tb-eyebrow">// let's build something</p>
+    <h2 class="tb-title">Get in touch</h2>
+    <div class="tb-links">
+      <a href="mailto:parateprem3706@gmail.com">parateprem3706@gmail.com</a>
+      <a href="tel:+919558798089">+91 9558798089</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/parateprem</a>
+    </div>
+  </div>
+
+  <div class="tb-right">
+    <table class="tb-table">
+      <tr><td>NAME</td><td>Parate Prem</td></tr>
+      <tr><td>ROLE</td><td>Cloud &amp; Full-Stack Engineer</td></tr>
+      <tr><td>LOCATION</td><td>Gujarat, India</td></tr>
+      <tr><td>SHEET</td><td>01 / 01</td></tr>
+    </table>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
